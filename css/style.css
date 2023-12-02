@@ -272,7 +272,7 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    width: 800px;
+    width: 750px;
     height: 100%;
     background: transparent;
     transition: 3s;
@@ -506,12 +506,41 @@ form input, form textarea {
 }
 
 /* ----------------Footer---------------- */
-.footer {
+/* .footer {
     width: 100%;
     text-align: center;
     padding: 25px 0;
     background: #00abf0;
     font-weight: 300;
     margin-top: 20px;
+    color: #081b29;
+} */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background: #00abf0;
+}
+
+.footer-text p {
+    font-size: 1rem;
+}
+
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: #00abf0;
+    border: .2rem solid #081b29;
+    border-radius: .6rem;
+}
+
+.footer-iconTop a i {
+    font-size: 1.4rem;
     color: #081b29;
 }
