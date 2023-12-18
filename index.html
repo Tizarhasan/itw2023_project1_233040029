@@ -6,6 +6,8 @@
     <title>Portfolio Tizarhasan</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,9 +30,8 @@
             <div class="home-content">
                 <h3>Digital Content</h3>
                 <h1>Hi, I'm Tizar Hasan</h1>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam, quisquam suscipit vitae exercitationem commodi quia blanditiis iure perspiciatis. Optio non corrupti assumenda repellat, placeat voluptas deleniti.</p> -->
                 <div class="btn-box">
-                     <a href="#">Hire Me</a>
+                     <!-- <a href="#">Hire Me</a> -->
                      <a href="#contact">Let's Talk</a>
                 </div>
             </div>
@@ -50,7 +51,7 @@
     <section class="about" id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1" data-aos="fade-right">
                     <img src="img/user.jpg" alt="">
                 </div>
                 <div class="about-col-2">
@@ -78,17 +79,20 @@
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <h2>Editor</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, qui?</p>
                     <a href="#services">Learn more</a>
                 </div>
-                <div>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <h2>Animator</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, qui?</p>
                     <a href="#services">Learn more</a>
                 </div>
-                <div>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <h2>Videographer</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, qui?</p>
                     <a href="#services">Learn more</a>
@@ -153,7 +157,7 @@
     </section>
     <!-- ----------------Contact End---------------- -->
 
-    <div class="footer">
+    <!-- <div class="footer">
         <div class="footer-text">
             <p>Copyright <i class='bx bx-copyright'></i>Zar. Created with <i class='bx bxs-heart' ></i> by <a href="https://www.instagram.com/tizarhasan/" class="text-white fw-bold">Tizarhasan</a></p>
         </div>
@@ -161,6 +165,11 @@
         <div class="footer-iconTop">
             <a href="#"><i class='bx bx-chevrons-up' ></i></a>
         </div>
-    </div>
+    </div> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
