@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!-- icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <header class="header">
          <a href="#" class="logo">Zar.</a>
-
          <nav class="navbar">
             <a href="#" class="active ">Home</a>
             <a href="#about">About</a>
@@ -21,6 +21,11 @@
             <a href="#project">Project</a>
             <a href="#contact">Contact </a>
          </nav>
+         <div id="menu" onclick="openMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </header>
 
 
@@ -51,7 +56,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1" data-aos="fade-right">
-                    <img src="img/user.jpg" alt="">
+                    <img src="assets/img/user.jpg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -81,19 +86,19 @@
                 <div data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
                     <h2>Editor</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, qui?</p>
+                    <p>A video editor is a creative professional who assembles, cuts, and edits video footage to create engaging and high-quality visual narratives.</p>
                     <a href="#services">Learn more</a>
                 </div>
                 <div data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
                     <h2>Animator</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, qui?</p>
+                    <p>A video animator is a digital artist crafting visual motion for video content, using animation and visual effects to convey narratives or messages.</p>
                     <a href="#services">Learn more</a>
                 </div>
                 <div data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
                     <h2>Videographer</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, qui?</p>
+                    <p>A videographer is a professional who records and produces videos for various purposes, such as events, advertising, or multimedia content production.</p>
                     <a href="#services">Learn more</a>
                 </div>
             </div>
@@ -108,17 +113,17 @@
             <div class="work-list">
                 <div class="work">
                     <video controls="true">
-                        <source src="vids/vid1.mp4" type="video/webm">
+                        <source src="assets/vids/vid1.mp4" type="video/webm">
                     </video>
                 </div>
                 <div class="work">
                     <video controls="true">
-                        <source src="vids/vid2.mp4" type="video/webm">
+                        <source src="assets/vids/vid2.mp4" type="video/webm">
                     </video>
                 </div>
                 <div class="work">
                     <video controls="true">
-                        <source src="vids/vid3.mp4" type="video/webm">
+                        <source src="assets/vids/vid3.mp4" type="video/webm">
                     </video>
                 </div>
             </div>
@@ -144,22 +149,53 @@
                 </div>
 
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
+                    <form name="submit-to-google-sheet" action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" onclick="confirm('Yakin ingin mengirim pesan?');location.reload()">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
     <!-- ----------------Contact End---------------- -->
+    <footer>
+        <div class="main-footer">
+            <h1>Zar.</h1>
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>Ciwastra</p>
+                <p>Bandung, West Java</p>
+                <a href="mailto:tizarhasan443@gmail.com">tizarhasan443@gmail.com</a>
+            </div>
+            <div class="footer-services">
+                <h2>Services</h2>
+                <p>Editor</p>
+                <p>Animator</p>
+                <p>Videographer</p>
+            </div>
+            <div class="footer-links">
+                <h2>Link</h2>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="https://www.instagram.com/tizarhasan/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.youtube.com/@tyezarhasan9094"><i class='bx bxl-youtube' ></i></a>
+            <a href="https://github.com/Tizarhasan/"><i class='bx bxl-github' ></i></a>
+            <p>Copyright &copy 2023 Tizar Hasan. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
