@@ -327,7 +327,7 @@ section {
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
     z-index: 100;
 }
 
@@ -511,17 +511,6 @@ section {
     font-size: 25px;
 }
 
-.social-icons {
-    margin-top: 30px;
-}
-
-.social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-}
 
 .contact-right form {
     width: 100%;
