@@ -12,7 +12,7 @@ function openMenu(e) {
   }
 
 //form message
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwtIZYGKVSpGQUj-ETuJ_G1TF2nq5liIhpSrO6nYeJn2vDLzxKl3vAPHCS81YGjTNpC/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw9Dh6aTnrAuLZ_gvbFV0aBGjQ5tyYLNn1teZtaV0v4sPYnIwxnMhxg93l1R1yqkCZs0w/exec'
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
